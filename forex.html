@@ -38,7 +38,7 @@
 <body style='margin: 0; overflow: hidden;'>
     <a-scene
         cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
-        raycaster="objects: [clickhandler], [clickhandler2], [clickhandler3];"
+        raycaster="objects: [clickhandler];"
         vr-mode-ui="enabled: false"
 		embedded
 		arjs='sourceType: webcam; debugUIEnabled: false;'>
@@ -49,8 +49,8 @@
 <img id="pkm3" crossorigin="" src="sbm.png"> 
             </a-assets>
 	<a-camera gps-projected-camera='simulateLatitude: 51.049; simulateLongitude: -0.723' rotation-reader></a-camera>  
-	<a-image  clickhandler3 src="#pkm2" scale = "15 15 15"  gps-projected-entity-place="latitude: 51.0486; longitude: -0.7226" transparent="true" position="0 10 0"></a-image> 
-	<a-image  clickhandler2 src="#pkm1" scale = "15 15 15" rotation = "-50 90 0" gps-projected-entity-place="latitude: 51.0489; longitude: -0.7240" transparent="true" position="0 10 0"></a-image>
+	<a-image  clickhandler src="#pkm2" scale = "15 15 15"  gps-projected-entity-place="latitude: 51.0486; longitude: -0.7226" transparent="true" position="0 10 0"></a-image> 
+	<a-image  clickhandler src="#pkm1" scale = "15 15 15" rotation = "-50 90 0" gps-projected-entity-place="latitude: 51.0489; longitude: -0.7240" transparent="true" position="0 10 0"></a-image>
         <a-image  clickhandler src="#pkm3" scale = "15 15 15" rotation = "-50 90 0" gps-projected-entity-place="latitude: 51.0491; longitude: -0.7246" transparent="true" position="0 10 0"></a-image>
         
 	</a-scene>
