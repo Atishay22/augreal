@@ -25,18 +25,11 @@
 		embedded
 		arjs='sourceType: webcam; debugUIEnabled: false;'>
 
-       <a-box
-            clickhandler
-            material="color: red;"
-            scale="10 10 10"
-            gps-entity-place="latitude: -20.1941549; longitude: 57.6679419;"
-        </a-box>
+        <a-assets>
+<img id="pkm1" crossorigin="" src="mcb.png"> 
+            </a-assets>
 	    
-	<!-- <a-image>
-	 clickhandler
-         src="mcb.png";
-	 gps-entity-place="latitude: -20.1941549; longitude: 57.6679419;"
-        </a-image> -->
+	<a-image  clickhandler src="#pkm1" scale = "10 10 10" rotation = "-50 90 0" gps-projected-entity-place="latitude: 51.0489; longitude: -0.7240" transparent="true" position="0 10 0"></a-image>
 
         <a-camera gps-camera rotation-reader>
 		</a-camera>
